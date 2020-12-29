@@ -8,7 +8,7 @@
 -->
 <cc13_bps
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\XSD\isp\cc_1_3_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\cc_1_3_0.xsd">
   <enable_section>
     <cc_enable>1</cc_enable>
   </enable_section>

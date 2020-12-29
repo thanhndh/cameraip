@@ -8,7 +8,7 @@
 -->
 <tf10_ipe
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\..\..\XSD\isp\tf_1_0_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\tf_1_0_0.xsd">
   <enable_section>
     <master_en>1</master_en>
   </enable_section>

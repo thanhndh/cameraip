@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
 ========================================================================
-   Copyright(c) 2018 Qualcomm Technologies, Inc.
+   Copyright (c) 2017 Qualcomm Technologies, Inc.
    All Rights Reserved.
    Confidential and Proprietary - Qualcomm Technologies, Inc.
 ========================================================================
@@ -14,93 +14,93 @@
     <minor_revision>0</minor_revision>
     <incr_revision>0</incr_revision>
   </module_version>
-  <YHistStretch description="Y histogram stretch improves contrast by stretching histogram so that some pixels are shifted to dark and bright histogram ends">
-    <enableYHistStretch description="This feature increases contrast based on Y histogram data" tuning_parameter_level="often_tune">false</enableYHistStretch>
-    <tempFilter description="Temporal filtering of clamp and scale adjustments. The smaller the value, the more temporal filtering" range="[0.1,1.0]" tuning_parameter_level="rarely_tune">0.3</tempFilter>
-    <yHistStretchZone description="Triggers for Y histogram stretch parameters">
-      <zoneTrigger description="Lux range to define one trigger zone for Y histogram stretch" range="[0,500]" tuning_parameter_level="rarely_tune">
+  <YHistStretch>
+    <enableYHistStretch type="bool">false</enableYHistStretch>
+    <tempFilter type="float" range="[0.1,1.0]">0.3</tempFilter>
+    <yHistStretchZone>
+      <zoneTrigger range="[0,500]">
         <start>0</start>
         <end>190</end>
       </zoneTrigger>
-      <zoneData description="Y histogram parameters adjusted by triggers">
-        <darkBinThres description="Desired percentage of dark pixels; upper limit" range="[0.0,0.05]" tuning_parameter_level="rarely_tune">0.03</darkBinThres>
-        <darkBinThresLow description="Desired percentage of dark pixels; lower limit" range="[0.0,0.05]" tuning_parameter_level="rarely_tune">0</darkBinThresLow>
-        <satBinThres description="Desired percentage of bright pixels; upper limit" range="[0.92,1.0]" tuning_parameter_level="rarely_tune">0.97</satBinThres>
-        <satBinThresLow description="Desired percentage of bright pixels; lower limit" range="[0.92,1.0]" tuning_parameter_level="rarely_tune">0</satBinThresLow>
-        <darkTargetLvL description="Target average value for dark pixels" range="[0,5]" tuning_parameter_level="rarely_tune">2</darkTargetLvL>
-        <satTargetLvL description="Target average value for bright pixels" range="[210,255]" tuning_parameter_level="rarely_tune">230</satTargetLvL>
-        <satScalingMax description="Maximum Y stretching" range="[1.0,1.3]" tuning_parameter_level="rarely_tune">1.25</satScalingMax>
-        <darkClampingMax description="Maximum amount of clamping adjustment on the dark end of the histogram" range="[0,16]" tuning_parameter_level="rarely_tune">3</darkClampingMax>
+      <zoneData>
+        <darkBinThres type="float" range="[0.0,0.05]">0.03</darkBinThres>
+        <darkBinThresLow type="float" range="[0.0,0.05]">0</darkBinThresLow>
+        <satBinThres type="float" range="[0.92,1.0]">1</satBinThres>
+        <satBinThresLow type="float" range="[0.92,1.0]">0.94</satBinThresLow>
+        <darkTargetLvL type="int" range="[0,5]">2</darkTargetLvL>
+        <satTargetLvL type="int" range="[210,255]">230</satTargetLvL>
+        <satScalingMax type="float" range="[1.0,1.3]">1.25</satScalingMax>
+        <darkClampingMax type="int" range="[0,16]">3</darkClampingMax>
       </zoneData>
     </yHistStretchZone>
-    <yHistStretchZone description="Triggers for Y histogram stretch parameters">
-      <zoneTrigger description="Lux range to define one trigger zone for Y histogram stretch" range="[0,500]" tuning_parameter_level="rarely_tune">
+    <yHistStretchZone>
+      <zoneTrigger range="[0,500]">
         <start>230</start>
         <end>360</end>
       </zoneTrigger>
-      <zoneData description="Y histogram parameters adjusted by triggers">
-        <darkBinThres description="Desired percentage of dark pixels; upper limit" range="[0.0,0.05]" tuning_parameter_level="rarely_tune">0.03</darkBinThres>
-        <darkBinThresLow description="Desired percentage of dark pixels; lower limit" range="[0.0,0.05]" tuning_parameter_level="rarely_tune">0</darkBinThresLow>
-        <satBinThres description="Desired percentage of bright pixels; upper limit" range="[0.92,1.0]" tuning_parameter_level="rarely_tune">0.97</satBinThres>
-        <satBinThresLow description="Desired percentage of bright pixels; lower limit" range="[0.92,1.0]" tuning_parameter_level="rarely_tune">0</satBinThresLow>
-        <darkTargetLvL description="Target average value for dark pixels" range="[0,5]" tuning_parameter_level="rarely_tune">2</darkTargetLvL>
-        <satTargetLvL description="Target average value for bright pixels" range="[210,255]" tuning_parameter_level="rarely_tune">230</satTargetLvL>
-        <satScalingMax description="Maximum Y stretching" range="[1.0,1.3]" tuning_parameter_level="rarely_tune">1.25</satScalingMax>
-        <darkClampingMax description="Maximum amount of clamping adjustment on the dark end of the histogram" range="[0,16]" tuning_parameter_level="rarely_tune">3</darkClampingMax>
+      <zoneData>
+        <darkBinThres type="float" range="[0.0,0.05]">0.03</darkBinThres>
+        <darkBinThresLow type="float" range="[0.0,0.05]">0</darkBinThresLow>
+        <satBinThres type="float" range="[0.92,1.0]">1</satBinThres>
+        <satBinThresLow type="float" range="[0.92,1.0]">0.94</satBinThresLow>
+        <darkTargetLvL type="int" range="[0,5]">2</darkTargetLvL>
+        <satTargetLvL type="int" range="[210,255]">230</satTargetLvL>
+        <satScalingMax type="float" range="[1.0,1.3]">1.25</satScalingMax>
+        <darkClampingMax type="int" range="[0,16]">3</darkClampingMax>
       </zoneData>
     </yHistStretchZone>
-    <yHistStretchZone description="Triggers for Y histogram stretch parameters">
-      <zoneTrigger description="Lux range to define one trigger zone for Y histogram stretch" range="[0,500]" tuning_parameter_level="rarely_tune">
+    <yHistStretchZone>
+      <zoneTrigger range="[0,500]">
         <start>420</start>
         <end>1000</end>
       </zoneTrigger>
-      <zoneData description="Y histogram parameters adjusted by triggers">
-        <darkBinThres description="Desired percentage of dark pixels; upper limit" range="[0.0,0.05]" tuning_parameter_level="rarely_tune">0.03</darkBinThres>
-        <darkBinThresLow description="Desired percentage of dark pixels; lower limit" range="[0.0,0.05]" tuning_parameter_level="rarely_tune">0</darkBinThresLow>
-        <satBinThres description="Desired percentage of bright pixels; upper limit" range="[0.92,1.0]" tuning_parameter_level="rarely_tune">0.97</satBinThres>
-        <satBinThresLow description="Desired percentage of bright pixels; lower limit" range="[0.92,1.0]" tuning_parameter_level="rarely_tune">0</satBinThresLow>
-        <darkTargetLvL description="Target average value for dark pixels" range="[0,5]" tuning_parameter_level="rarely_tune">2</darkTargetLvL>
-        <satTargetLvL description="Target average value for bright pixels" range="[210,255]" tuning_parameter_level="rarely_tune">230</satTargetLvL>
-        <satScalingMax description="Maximum Y stretching" range="[1.0,1.3]" tuning_parameter_level="rarely_tune">1.25</satScalingMax>
-        <darkClampingMax description="Maximum amount of clamping adjustment on the dark end of the histogram" range="[0,16]" tuning_parameter_level="rarely_tune">3</darkClampingMax>
+      <zoneData>
+        <darkBinThres type="float" range="[0.0,0.05]">0.03</darkBinThres>
+        <darkBinThresLow type="float" range="[0.0,0.05]">0</darkBinThresLow>
+        <satBinThres type="float" range="[0.92,1.0]">1</satBinThres>
+        <satBinThresLow type="float" range="[0.92,1.0]">0.94</satBinThresLow>
+        <darkTargetLvL type="int" range="[0,5]">2</darkTargetLvL>
+        <satTargetLvL type="int" range="[210,255]">230</satTargetLvL>
+        <satScalingMax type="float" range="[1.0,1.3]">1.25</satScalingMax>
+        <darkClampingMax type="int" range="[0,16]">3</darkClampingMax>
       </zoneData>
     </yHistStretchZone>
   </YHistStretch>
-  <touchEVScnMonitor description="Touch EV Scene Monitor will reset the touch ROI if a scene change is detected">
-    <enableTouchEVScnDet description="This feature will reset touch AEC ROI when a scene change is detected" tuning_parameter_level="often_tune">false</enableTouchEVScnDet>
-    <thresLumaDelta description="Scene change is detected if the absolute luma delta between previous and current frame is larger than this threshold" range="[0,32]" tuning_parameter_level="rarely_tune">16</thresLumaDelta>
-    <thresLumaAvgPct description="Scene detection in low light will be triggered if deviation exceeds temporally averaged luma multiplied by this factor; the smaller the value the more scene change will trigger" range="[0.02,0.1]" tuning_parameter_level="rarely_tune">0.05</thresLumaAvgPct>
-    <minLumaAvg description="Scene detection will trigger if the difference between cur luma and temporally averaged luma differ by more than this threshold" range="[5,20]" tuning_parameter_level="rarely_tune">10</minLumaAvg>
-    <frameDelayBeforeStable description="Number of frames luma needs to be stable for the algorithm to begin monitoring" range="[2,10]" tuning_parameter_level="rarely_tune">5</frameDelayBeforeStable>
-    <temporalLumaAverageCount description="How many frames to use in temporal average computation" range="[5,20]" tuning_parameter_level="rarely_tune">8</temporalLumaAverageCount>
+  <touchEVScnMonitor>
+    <enableTouchEVScnDet type="bool">false</enableTouchEVScnDet>
+    <thresLumaDelta type="int" range="[0,32]">16</thresLumaDelta>
+    <thresLumaAvgPct type="float" range="[0.02,0.1]">0.05</thresLumaAvgPct>
+    <minLumaAvg type="float" range="[5,20]">10</minLumaAvg>
+    <frameDelayBeforeStable type="int" range="[2,10]">5</frameDelayBeforeStable>
+    <temporalLumaAverageCount type="int" range="[5,20]">8</temporalLumaAverageCount>
   </touchEVScnMonitor>
-  <dualCam description="Dual Camera tuning minimizes exposure discrepancies between two cameras">
-    <enableDualCamExpComp description="This feature will compensate exposure between two sensors based on color temperature" tuning_parameter_level="rarely_tune">false</enableDualCamExpComp>
-    <dualCamExpCompMultiplier description="Base multiplier for slave exposure" range="[0.5,2.0]" tuning_parameter_level="rarely_tune">1</dualCamExpCompMultiplier>
-    <CCTBasedExpComp description="CCT-based adjustments to make dual camera exposures similar">
-      <CCT description="CCT index threshold for ratio adjust" range="[2000,10000]" tuning_parameter_level="rarely_tune">6500</CCT>
-      <compensationRatio description="Ratio to compensate slave camera exposure based on CCT index" range="[0.0,2.0]" tuning_parameter_level="rarely_tune">1</compensationRatio>
+  <dualCam>
+    <enableDualCamExpComp type="bool">false</enableDualCamExpComp>
+    <dualCamExpCompMultiplier type="float" range="[0.5,2.0]">1</dualCamExpCompMultiplier>
+    <CCTBasedExpComp>
+      <CCT type="int" range="[2000,10000]">6500</CCT>
+      <compensationRatio type="float" range="[0.0,2.0]">1.02</compensationRatio>
     </CCTBasedExpComp>
-    <CCTBasedExpComp description="CCT-based adjustments to make dual camera exposures similar">
-      <CCT description="CCT index threshold for ratio adjust" range="[2000,10000]" tuning_parameter_level="rarely_tune">5000</CCT>
-      <compensationRatio description="Ratio to compensate slave camera exposure based on CCT index" range="[0.0,2.0]" tuning_parameter_level="rarely_tune">1</compensationRatio>
+    <CCTBasedExpComp>
+      <CCT type="int" range="[2000,10000]">5000</CCT>
+      <compensationRatio type="float" range="[0.0,2.0]">1</compensationRatio>
     </CCTBasedExpComp>
-    <CCTBasedExpComp description="CCT-based adjustments to make dual camera exposures similar">
-      <CCT description="CCT index threshold for ratio adjust" range="[2000,10000]" tuning_parameter_level="rarely_tune">4500</CCT>
-      <compensationRatio description="Ratio to compensate slave camera exposure based on CCT index" range="[0.0,2.0]" tuning_parameter_level="rarely_tune">1</compensationRatio>
+    <CCTBasedExpComp>
+      <CCT type="int" range="[2000,10000]">4500</CCT>
+      <compensationRatio type="float" range="[0.0,2.0]">0.97</compensationRatio>
     </CCTBasedExpComp>
-    <CCTBasedExpComp description="CCT-based adjustments to make dual camera exposures similar">
-      <CCT description="CCT index threshold for ratio adjust" range="[2000,10000]" tuning_parameter_level="rarely_tune">4200</CCT>
-      <compensationRatio description="Ratio to compensate slave camera exposure based on CCT index" range="[0.0,2.0]" tuning_parameter_level="rarely_tune">1</compensationRatio>
+    <CCTBasedExpComp>
+      <CCT type="int" range="[2000,10000]">4200</CCT>
+      <compensationRatio type="float" range="[0.0,2.0]">1.03</compensationRatio>
     </CCTBasedExpComp>
-    <CCTBasedExpComp description="CCT-based adjustments to make dual camera exposures similar">
-      <CCT description="CCT index threshold for ratio adjust" range="[2000,10000]" tuning_parameter_level="rarely_tune">3200</CCT>
-      <compensationRatio description="Ratio to compensate slave camera exposure based on CCT index" range="[0.0,2.0]" tuning_parameter_level="rarely_tune">1</compensationRatio>
+    <CCTBasedExpComp>
+      <CCT type="int" range="[2000,10000]">3200</CCT>
+      <compensationRatio type="float" range="[0.0,2.0]">1.04</compensationRatio>
     </CCTBasedExpComp>
-    <CCTBasedExpComp description="CCT-based adjustments to make dual camera exposures similar">
-      <CCT description="CCT index threshold for ratio adjust" range="[2000,10000]" tuning_parameter_level="rarely_tune">2600</CCT>
-      <compensationRatio description="Ratio to compensate slave camera exposure based on CCT index" range="[0.0,2.0]" tuning_parameter_level="rarely_tune">1</compensationRatio>
+    <CCTBasedExpComp>
+      <CCT type="int" range="[2000,10000]">2600</CCT>
+      <compensationRatio type="float" range="[0.0,2.0]">1.12</compensationRatio>
     </CCTBasedExpComp>
   </dualCam>
-  <enableLVTest description="Reserved for internal usage only. " tuning_parameter_level="never_tune">false</enableLVTest>
+  <enableLVTest type="bool">false</enableLVTest>
 </Extension>

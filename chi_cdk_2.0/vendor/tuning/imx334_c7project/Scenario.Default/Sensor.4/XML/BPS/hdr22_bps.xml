@@ -8,7 +8,7 @@
 -->
 <hdr22_bps
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\XSD\isp\hdr_2_2_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\hdr_2_2_0.xsd">
   <enable_section>
     <hdr_enable>0</hdr_enable>
   </enable_section>

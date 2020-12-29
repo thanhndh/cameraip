@@ -8,7 +8,7 @@
 -->
 <tmc10_sw
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\XSD\isp\tmc_1_0_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\tmc_1_0_0.xsd">
   <enable_section>
     <adrc_isp_enable>0</adrc_isp_enable>
   </enable_section>

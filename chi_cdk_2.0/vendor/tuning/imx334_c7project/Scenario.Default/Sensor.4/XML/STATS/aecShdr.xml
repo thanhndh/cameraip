@@ -8,7 +8,7 @@
 -->
 <aecShdr
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\..\..\..\cdk\chromatix\XSD\stats\aec\aecShdr.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\stats\aec\aecShdr.xsd">
     <module_version>
         <major_revision>2</major_revision>
         <minor_revision>0</minor_revision>

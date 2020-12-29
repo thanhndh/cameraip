@@ -8,7 +8,7 @@
 -->
 <SFSubSmpV1
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\XSD\stats\awb\modsfsubsmpv1.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\stats\awb\modsfsubsmpv1.xsd">
   <moduleID description="Define module ID, sub module ID" tuning_parameter_level="never_tune">
     <moduleID range="[1,1000]">0</moduleID>
     <subModuleID range="[1,1000]">0</subModuleID>

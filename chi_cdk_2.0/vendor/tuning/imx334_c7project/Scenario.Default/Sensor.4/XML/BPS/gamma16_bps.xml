@@ -8,7 +8,7 @@
 -->
 <gamma16_bps
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\XSD\isp\gamma_1_6_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\gamma_1_6_0.xsd">
   <enable_section>
     <gamma_enable>1</gamma_enable>
   </enable_section>

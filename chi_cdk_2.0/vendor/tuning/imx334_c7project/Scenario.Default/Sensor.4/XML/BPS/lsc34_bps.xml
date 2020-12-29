@@ -8,7 +8,7 @@
 -->
 <lsc34_bps
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\XSD\isp\lsc_3_4_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\lsc_3_4_0.xsd">
   <enable_section>
     <rolloff_enable>0</rolloff_enable>
   </enable_section>

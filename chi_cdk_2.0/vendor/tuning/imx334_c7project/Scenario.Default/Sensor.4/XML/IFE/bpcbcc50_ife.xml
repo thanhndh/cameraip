@@ -8,7 +8,7 @@
 -->
 <bpcbcc50_ife
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\..\..\..\cdk\chromatix\XSD\isp\bpcbcc_5_0_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\bpcbcc_5_0_0.xsd">
   <enable_section>
     <bpcbcc_enable>1</bpcbcc_enable>
   </enable_section>

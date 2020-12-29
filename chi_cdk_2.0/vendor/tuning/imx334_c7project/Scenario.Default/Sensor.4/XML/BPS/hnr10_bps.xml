@@ -8,7 +8,7 @@
 -->
 <hnr10_bps
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\XSD\isp\hnr_1_0_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\hnr_1_0_0.xsd">
   <enable_section>
     <hnr_nr_enable description="HNR noise reduction enable bit" range="[0, 1]" bit_depth="1u" length="1" tuning_parameter_level="rarely_tune" additional_notes="none">1</hnr_nr_enable>
     <hnr_blend_enable description="HNR blending enable bit" range="[0, 1]" bit_depth="1u" length="1" tuning_parameter_level="rarely_tune" additional_notes="none">1</hnr_blend_enable>

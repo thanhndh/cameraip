@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
 ========================================================================
-   Copyright(c) 2018 Qualcomm Technologies, Inc.
+   Copyright (c) 2017-2020 Qualcomm Technologies, Inc.
    All Rights Reserved.
    Confidential and Proprietary - Qualcomm Technologies, Inc.
 ========================================================================
@@ -62,16 +62,16 @@
                         <end>10000</end>
                       </cct_trigger>
                       <pedestal13_rgn_data>
-                        <channel_black_level_r_tab description="R/Gr/Gb/B channel black level.  Increasing the value increases the black subtraction and increase the contrast.  " range="[0, 4095]" bit_depth=" 12u" length="130" conversion="Bitwidth conversion if pipeline bitwidth is not 14bit" tuning_parameter_level="must_tune" additional_notes="2-D black correction to replace the single black level.  Black level in chromatix_linearization_type data should be set to zero.  Use parameters from chromatix_black_level_type to adjust black for low light if needed.  Use trigger and max_blk_increase to interpolate blk_increase, and add blk_increase to each node in LUTs">
+                        <channel_black_level_r_tab type="uint" range="[0, 4095]" length="130">
                           <channel_black_level_r>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</channel_black_level_r>
                         </channel_black_level_r_tab>
-                        <channel_black_level_gr_tab description="R/Gr/Gb/B channel black level.  Increasing the value increases the black subtraction and increase the contrast.  " range="[0, 4095]" bit_depth=" 12u" length="130" conversion="Bitwidth conversion if pipeline bitwidth is not 14bit" tuning_parameter_level="must_tune" additional_notes="2-D black correction to replace the single black level.  Black level in chromatix_linearization_type data should be set to zero.  Use parameters from chromatix_black_level_type to adjust black for low light if needed.  Use trigger and max_blk_increase to interpolate blk_increase, and add blk_increase to each node in LUTs">
+                        <channel_black_level_gr_tab type="uint" range="[0, 4095]" length="130">
                           <channel_black_level_gr>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</channel_black_level_gr>
                         </channel_black_level_gr_tab>
-                        <channel_black_level_gb_tab description="R/Gr/Gb/B channel black level.  Increasing the value increases the black subtraction and increase the contrast.  " range="[0, 4095]" bit_depth=" 12u" length="130" conversion="Bitwidth conversion if pipeline bitwidth is not 14bit" tuning_parameter_level="must_tune" additional_notes="2-D black correction to replace the single black level.  Black level in chromatix_linearization_type data should be set to zero.  Use parameters from chromatix_black_level_type to adjust black for low light if needed.  Use trigger and max_blk_increase to interpolate blk_increase, and add blk_increase to each node in LUTs">
+                        <channel_black_level_gb_tab type="uint" range="[0, 4095]" length="130">
                           <channel_black_level_gb>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</channel_black_level_gb>
                         </channel_black_level_gb_tab>
-                        <channel_black_level_b_tab description="R/Gr/Gb/B channel black level.  Increasing the value increases the black subtraction and increase the contrast.  " range="[0, 4095]" bit_depth=" 12u" length="130" conversion="Bitwidth conversion if pipeline bitwidth is not 14bit" tuning_parameter_level="must_tune" additional_notes="2-D black correction to replace the single black level.  Black level in chromatix_linearization_type data should be set to zero.  Use parameters from chromatix_black_level_type to adjust black for low light if needed.  Use trigger and max_blk_increase to interpolate blk_increase, and add blk_increase to each node in LUTs">
+                        <channel_black_level_b_tab type="uint" range="[0, 4095]" length="130">
                           <channel_black_level_b>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</channel_black_level_b>
                         </channel_black_level_b_tab>
                       </pedestal13_rgn_data>

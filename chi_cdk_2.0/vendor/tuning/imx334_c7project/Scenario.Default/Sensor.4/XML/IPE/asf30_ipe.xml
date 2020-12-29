@@ -8,7 +8,7 @@
 -->
 <asf30_ipe
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\..\..\XSD\isp\asf_3_0_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\asf_3_0_0.xsd">
   <enable_section>
     <asf_enable>1</asf_enable>
     <skin_enable description="enable bit of skin color based noise reduction" range="[0, 1]" bit_depth="1u" length="1" tuning_parameter_level="rarely_tune" additional_notes="if face_enable = 1 and skin_enable = 1, skin color noise reduction is applied on face regions; if face_enable  = 0 and skin_enable=1, skin color noise reduction is applied on both face regions and non-face regions">1</skin_enable>

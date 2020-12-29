@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
 ========================================================================
-   Copyright(c) 2018 Qualcomm Technologies, Inc.
+   Copyright (c) 2019-2020 Qualcomm Technologies, Inc.
    All Rights Reserved.
    Confidential and Proprietary - Qualcomm Technologies, Inc.
 ========================================================================
@@ -30,46 +30,16 @@
         <mod_cac22_aec_data>
           <aec_trigger>
             <lux_idx_start>1</lux_idx_start>
-            <lux_idx_end>200</lux_idx_end>
-            <gain_start>1</gain_start>
-            <gain_end>64.8</gain_end>
-          </aec_trigger>
-          <cac22_rgn_data>
-            <cac_en description="CAC enable bit" range="[0, 1]" bit_depth="1u" length="1" tuning_parameter_level="rarely_tune" additional_notes="0x1: enable cac. 0x0: disable cac.">1</cac_en>
-            <y_spot_thr description="the threshold on brightness difference between one pixel and its surrounding pixels for luma spot detection." range="[0, 63]" bit_depth="6u, q6" length="1" tuning_parameter_level="rarely_tune" additional_notes="By decreasing the threshold, more points will be detected.">10</y_spot_thr>
-            <y_saturation_thr description="the brightness saturation threshold for luma spot detection." range="[0, 1023]" bit_depth="10u" length="1" tuning_parameter_level="rarely_tune" additional_notes="By decreasing the threshold, more points will be detected.">240</y_saturation_thr>
-            <c_spot_thr description="the threshold on color difference between one pixel and its surrounding pixels for color spot detection." range="[0, 1023]" bit_depth="10u" length="1" tuning_parameter_level="rarely_tune" additional_notes="By decreasing the threshold, more points will be detected.">10</c_spot_thr>
-            <c_saturation_thr description="the color saturation threshold for color spot detection." range="[0, 511]" bit_depth="9u" length="1" tuning_parameter_level="rarely_tune" additional_notes="By decreasing the threshold, more points will be detected.">5</c_saturation_thr>
-          </cac22_rgn_data>
-        </mod_cac22_aec_data>
-        <mod_cac22_aec_data>
-          <aec_trigger>
-            <lux_idx_start>230</lux_idx_start>
-            <lux_idx_end>450</lux_idx_end>
-            <gain_start>1</gain_start>
-            <gain_end>200</gain_end>
-          </aec_trigger>
-          <cac22_rgn_data>
-            <cac_en description="CAC enable bit" range="[0, 1]" bit_depth="1u" length="1" tuning_parameter_level="rarely_tune" additional_notes="0x1: enable cac. 0x0: disable cac.">1</cac_en>
-            <y_spot_thr description="the threshold on brightness difference between one pixel and its surrounding pixels for luma spot detection." range="[0, 63]" bit_depth="6u, q6" length="1" tuning_parameter_level="rarely_tune" additional_notes="By decreasing the threshold, more points will be detected.">10</y_spot_thr>
-            <y_saturation_thr description="the brightness saturation threshold for luma spot detection." range="[0, 1023]" bit_depth="10u" length="1" tuning_parameter_level="rarely_tune" additional_notes="By decreasing the threshold, more points will be detected.">960</y_saturation_thr>
-            <c_spot_thr description="the threshold on color difference between one pixel and its surrounding pixels for color spot detection." range="[0, 1023]" bit_depth="10u" length="1" tuning_parameter_level="rarely_tune" additional_notes="By decreasing the threshold, more points will be detected.">40</c_spot_thr>
-            <c_saturation_thr description="the color saturation threshold for color spot detection." range="[0, 511]" bit_depth="9u" length="1" tuning_parameter_level="rarely_tune" additional_notes="By decreasing the threshold, more points will be detected.">20</c_saturation_thr>
-          </cac22_rgn_data>
-        </mod_cac22_aec_data>
-        <mod_cac22_aec_data>
-          <aec_trigger>
-            <lux_idx_start>480</lux_idx_start>
             <lux_idx_end>900</lux_idx_end>
             <gain_start>1</gain_start>
             <gain_end>200</gain_end>
           </aec_trigger>
           <cac22_rgn_data>
-            <cac_en description="CAC enable bit" range="[0, 1]" bit_depth="1u" length="1" tuning_parameter_level="rarely_tune" additional_notes="0x1: enable cac. 0x0: disable cac.">1</cac_en>
-            <y_spot_thr description="the threshold on brightness difference between one pixel and its surrounding pixels for luma spot detection." range="[0, 63]" bit_depth="6u, q6" length="1" tuning_parameter_level="rarely_tune" additional_notes="By decreasing the threshold, more points will be detected.">10</y_spot_thr>
-            <y_saturation_thr description="the brightness saturation threshold for luma spot detection." range="[0, 1023]" bit_depth="10u" length="1" tuning_parameter_level="rarely_tune" additional_notes="By decreasing the threshold, more points will be detected.">960</y_saturation_thr>
-            <c_spot_thr description="the threshold on color difference between one pixel and its surrounding pixels for color spot detection." range="[0, 1023]" bit_depth="10u" length="1" tuning_parameter_level="rarely_tune" additional_notes="By decreasing the threshold, more points will be detected.">40</c_spot_thr>
-            <c_saturation_thr description="the color saturation threshold for color spot detection." range="[0, 511]" bit_depth="9u" length="1" tuning_parameter_level="rarely_tune" additional_notes="By decreasing the threshold, more points will be detected.">20</c_saturation_thr>
+            <cac_en type="int" range="[0, 1]" length="1">1</cac_en>
+            <y_spot_thr type="uint" range="[0, 63]" length="1">10</y_spot_thr>
+            <y_saturation_thr type="uint" range="[0, 1023]" length="1">960</y_saturation_thr>
+            <c_spot_thr type="uint" range="[0, 1023]" length="1">40</c_spot_thr>
+            <c_saturation_thr type="uint" range="[0, 511]" length="1">20</c_saturation_thr>
           </cac22_rgn_data>
         </mod_cac22_aec_data>
       </total_scale_ratio_data>

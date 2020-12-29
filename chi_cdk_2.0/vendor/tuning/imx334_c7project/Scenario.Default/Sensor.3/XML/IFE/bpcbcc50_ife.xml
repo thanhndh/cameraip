@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
 ========================================================================
-   Copyright(c) 2018 Qualcomm Technologies, Inc.
+   Copyright (c) 2018-2020 Qualcomm Technologies, Inc.
    All Rights Reserved.
    Confidential and Proprietary - Qualcomm Technologies, Inc.
 ========================================================================
 -->
 <bpcbcc50_ife
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\..\..\..\cdk\chromatix\XSD\isp\bpcbcc_5_0_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\bpcbcc_5_0_0.xsd">
   <enable_section>
     <bpcbcc_enable>1</bpcbcc_enable>
   </enable_section>
@@ -24,8 +24,8 @@
   </control_method>
   <dynamic_enable_triggers>
     <bpcbcc_enable>
-      <enable description="enable BPCBCC5.0 module" range="[0, 1]" bit_depth="1u" length="1" tuning_parameter_level="rarely_tune" additional_notes="none">0</enable>
-      <hyst_control_var description="enable BPCBCC5.0 module" range="[0, 1]" bit_depth="1u" length="1" tuning_parameter_level="rarely_tune" additional_notes="none">control_gain</hyst_control_var>
+      <enable type="int" range="[0, 1]" length="1">0</enable>
+      <hyst_control_var type="uint" range="[0, 1]" length="1">control_gain</hyst_control_var>
       <hyst_mode>UPWARD</hyst_mode>
       <hyst_trigger>
         <start1>0.9</start1>
@@ -58,14 +58,14 @@
                 <gain_end>200</gain_end>
               </aec_trigger>
               <bpcbcc50_rgn_data>
-                <hot_pixel_correction_disable description="hot pixel correction enable/disable" range="[0, 1]" bit_depth="1u" length="1" conversion="No Conversion needed." tuning_parameter_level="often_tune" additional_notes="Enable bit.">0</hot_pixel_correction_disable>
-                <cold_pixel_correction_disable description="cold pixel correction enable/disable." range="[0, 1]" bit_depth="1u" length="1" conversion="No Conversion needed." tuning_parameter_level="rarely_tune" additional_notes="Enable bit">0</cold_pixel_correction_disable>
-                <same_channel_recovery description="Use only same channel information for detection." range="[0, 1]" bit_depth="1u" length="1" conversion="No Conversion needed" tuning_parameter_level="rarely_tune" additional_notes="Enable bit">0</same_channel_recovery>
-                <fmax description="Bad pixel maximum threshold factor." range="[0, 127]" bit_depth="7uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">80</fmax>
-                <fmin description="Bad pixel minimum threshold factor." range="[0, 127]" bit_depth="7uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">32</fmin>
-                <bpc_offset description="offset used in single bad pixel detection for regular bayer or T1 in HDR mode." range="[0, 16383]" bit_depth="14u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bpc_offset>
-                <bcc_offset description="offset used in couplet bad pixel detection for regular bayer or T1 in HDR mode." range="[0, 16383]" bit_depth="14u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bcc_offset>
-                <correction_threshold description="if departure of correction value from the original value is larger than this threshold, the pixel will be corrected using the correction value." range="[0, 8191]" bit_depth="13u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</correction_threshold>
+                <hot_pixel_correction_disable type="int" range="[0, 1]" length="1">0</hot_pixel_correction_disable>
+                <cold_pixel_correction_disable type="int" range="[0, 1]" length="1">0</cold_pixel_correction_disable>
+                <same_channel_recovery type="int" range="[0, 1]" length="1">0</same_channel_recovery>
+                <fmax type="int" range="[0, 127]" length="1">80</fmax>
+                <fmin type="int" range="[0, 127]" length="1">32</fmin>
+                <bpc_offset type="int" range="[0, 16383]" length="1">128</bpc_offset>
+                <bcc_offset type="int" range="[0, 16383]" length="1">128</bcc_offset>
+                <correction_threshold type="int" range="[0, 8191]" length="1">128</correction_threshold>
               </bpcbcc50_rgn_data>
             </mod_bpcbcc50_aec_data>
           </hdr_aec_data>

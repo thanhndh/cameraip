@@ -8,7 +8,7 @@
 -->
 <abf40_bps
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\XSD\isp\abf_4_0_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\abf_4_0_0.xsd">
   <enable_section>
     <bilateral_en description="enable bilateral filtering, tier 1 enable" range="[0,1]" bit_depth="1u" length="1" conversion="No Conversion needed" tuning_parameter_level="rarely_tune" additional_notes="none">1</bilateral_en>
     <minmax_en description="enable built-in min-max pixel filter, tier  1 enable" range="[0,1]" bit_depth="1u" length="1" conversion="No Conversion needed" tuning_parameter_level="rarely_tune" additional_notes="if BPC module is on, this feature is likely off">1</minmax_en>

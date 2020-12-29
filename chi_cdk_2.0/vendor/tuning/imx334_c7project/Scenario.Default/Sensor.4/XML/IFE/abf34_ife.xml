@@ -8,7 +8,7 @@
 -->
 <abf34_ife
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\..\..\..\cdk\chromatix\XSD\isp\abf_3_4_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\abf_3_4_0.xsd">
   <enable_section>
     <abf_enable>1</abf_enable>
     <sbpc_enable>1</sbpc_enable>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
 ========================================================================
-   Copyright(c) 2018 Qualcomm Technologies, Inc.
+   Copyright (c) 2018-2020 Qualcomm Technologies, Inc.
    All Rights Reserved.
    Confidential and Proprietary - Qualcomm Technologies, Inc.
 ========================================================================
 -->
 <pdpc11_ife
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\..\..\..\cdk\chromatix\XSD\isp\pdpc_1_1_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\pdpc_1_1_0.xsd">
   <enable_section>
     <pdpc_enable>0</pdpc_enable>
     <dsbpc_enable>0</dsbpc_enable>
@@ -46,12 +46,12 @@
                 <gain_end>1.1</gain_end>
               </aec_trigger>
               <pdpc11_rgn_data>
-                <fmax_pixel_q6 description="Bad pixel maximum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">80</fmax_pixel_q6>
-                <fmin_pixel_q6 description="Bad pixel minimum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">32</fmin_pixel_q6>
-                <bp_offset_g_pixel description="offset used in bad pixel detection for green pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_g_pixel>
-                <bp_offset_rb_pixel description="offset used in bad pixel detection for red or blue pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_rb_pixel>
-                <t2_bp_offset_g_pixel description="offset used in bad green pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_g_pixel>
-                <t2_bp_offset_rb_pixel description="offset used in bad red or blue pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_rb_pixel>
+                <fmax_pixel_q6 type="float" range="[0, 255]" length="1">80</fmax_pixel_q6>
+                <fmin_pixel_q6 type="float" range="[0, 255]" length="1">32</fmin_pixel_q6>
+                <bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_g_pixel>
+                <bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_rb_pixel>
+                <t2_bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_g_pixel>
+                <t2_bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_rb_pixel>
               </pdpc11_rgn_data>
             </mod_pdpc11_aec_data>
             <mod_pdpc11_aec_data>
@@ -62,12 +62,12 @@
                 <gain_end>2.1</gain_end>
               </aec_trigger>
               <pdpc11_rgn_data>
-                <fmax_pixel_q6 description="Bad pixel maximum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">80</fmax_pixel_q6>
-                <fmin_pixel_q6 description="Bad pixel minimum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">32</fmin_pixel_q6>
-                <bp_offset_g_pixel description="offset used in bad pixel detection for green pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_g_pixel>
-                <bp_offset_rb_pixel description="offset used in bad pixel detection for red or blue pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_rb_pixel>
-                <t2_bp_offset_g_pixel description="offset used in bad green pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_g_pixel>
-                <t2_bp_offset_rb_pixel description="offset used in bad red or blue pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_rb_pixel>
+                <fmax_pixel_q6 type="float" range="[0, 255]" length="1">80</fmax_pixel_q6>
+                <fmin_pixel_q6 type="float" range="[0, 255]" length="1">32</fmin_pixel_q6>
+                <bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_g_pixel>
+                <bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_rb_pixel>
+                <t2_bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_g_pixel>
+                <t2_bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_rb_pixel>
               </pdpc11_rgn_data>
             </mod_pdpc11_aec_data>
             <mod_pdpc11_aec_data>
@@ -78,12 +78,12 @@
                 <gain_end>4</gain_end>
               </aec_trigger>
               <pdpc11_rgn_data>
-                <fmax_pixel_q6 description="Bad pixel maximum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">80</fmax_pixel_q6>
-                <fmin_pixel_q6 description="Bad pixel minimum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">32</fmin_pixel_q6>
-                <bp_offset_g_pixel description="offset used in bad pixel detection for green pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_g_pixel>
-                <bp_offset_rb_pixel description="offset used in bad pixel detection for red or blue pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_rb_pixel>
-                <t2_bp_offset_g_pixel description="offset used in bad green pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_g_pixel>
-                <t2_bp_offset_rb_pixel description="offset used in bad red or blue pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_rb_pixel>
+                <fmax_pixel_q6 type="float" range="[0, 255]" length="1">80</fmax_pixel_q6>
+                <fmin_pixel_q6 type="float" range="[0, 255]" length="1">32</fmin_pixel_q6>
+                <bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_g_pixel>
+                <bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_rb_pixel>
+                <t2_bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_g_pixel>
+                <t2_bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_rb_pixel>
               </pdpc11_rgn_data>
             </mod_pdpc11_aec_data>
             <mod_pdpc11_aec_data>
@@ -94,12 +94,12 @@
                 <gain_end>8</gain_end>
               </aec_trigger>
               <pdpc11_rgn_data>
-                <fmax_pixel_q6 description="Bad pixel maximum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">80</fmax_pixel_q6>
-                <fmin_pixel_q6 description="Bad pixel minimum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">32</fmin_pixel_q6>
-                <bp_offset_g_pixel description="offset used in bad pixel detection for green pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_g_pixel>
-                <bp_offset_rb_pixel description="offset used in bad pixel detection for red or blue pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_rb_pixel>
-                <t2_bp_offset_g_pixel description="offset used in bad green pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_g_pixel>
-                <t2_bp_offset_rb_pixel description="offset used in bad red or blue pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_rb_pixel>
+                <fmax_pixel_q6 type="float" range="[0, 255]" length="1">80</fmax_pixel_q6>
+                <fmin_pixel_q6 type="float" range="[0, 255]" length="1">32</fmin_pixel_q6>
+                <bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_g_pixel>
+                <bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_rb_pixel>
+                <t2_bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_g_pixel>
+                <t2_bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_rb_pixel>
               </pdpc11_rgn_data>
             </mod_pdpc11_aec_data>
             <mod_pdpc11_aec_data>
@@ -110,12 +110,12 @@
                 <gain_end>16</gain_end>
               </aec_trigger>
               <pdpc11_rgn_data>
-                <fmax_pixel_q6 description="Bad pixel maximum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">80</fmax_pixel_q6>
-                <fmin_pixel_q6 description="Bad pixel minimum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">32</fmin_pixel_q6>
-                <bp_offset_g_pixel description="offset used in bad pixel detection for green pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_g_pixel>
-                <bp_offset_rb_pixel description="offset used in bad pixel detection for red or blue pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_rb_pixel>
-                <t2_bp_offset_g_pixel description="offset used in bad green pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_g_pixel>
-                <t2_bp_offset_rb_pixel description="offset used in bad red or blue pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_rb_pixel>
+                <fmax_pixel_q6 type="float" range="[0, 255]" length="1">80</fmax_pixel_q6>
+                <fmin_pixel_q6 type="float" range="[0, 255]" length="1">32</fmin_pixel_q6>
+                <bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_g_pixel>
+                <bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_rb_pixel>
+                <t2_bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_g_pixel>
+                <t2_bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_rb_pixel>
               </pdpc11_rgn_data>
             </mod_pdpc11_aec_data>
             <mod_pdpc11_aec_data>
@@ -126,12 +126,12 @@
                 <gain_end>32</gain_end>
               </aec_trigger>
               <pdpc11_rgn_data>
-                <fmax_pixel_q6 description="Bad pixel maximum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">80</fmax_pixel_q6>
-                <fmin_pixel_q6 description="Bad pixel minimum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">32</fmin_pixel_q6>
-                <bp_offset_g_pixel description="offset used in bad pixel detection for green pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_g_pixel>
-                <bp_offset_rb_pixel description="offset used in bad pixel detection for red or blue pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_rb_pixel>
-                <t2_bp_offset_g_pixel description="offset used in bad green pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_g_pixel>
-                <t2_bp_offset_rb_pixel description="offset used in bad red or blue pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_rb_pixel>
+                <fmax_pixel_q6 type="float" range="[0, 255]" length="1">80</fmax_pixel_q6>
+                <fmin_pixel_q6 type="float" range="[0, 255]" length="1">32</fmin_pixel_q6>
+                <bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_g_pixel>
+                <bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_rb_pixel>
+                <t2_bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_g_pixel>
+                <t2_bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_rb_pixel>
               </pdpc11_rgn_data>
             </mod_pdpc11_aec_data>
             <mod_pdpc11_aec_data>
@@ -142,12 +142,12 @@
                 <gain_end>64</gain_end>
               </aec_trigger>
               <pdpc11_rgn_data>
-                <fmax_pixel_q6 description="Bad pixel maximum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">80</fmax_pixel_q6>
-                <fmin_pixel_q6 description="Bad pixel minimum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">32</fmin_pixel_q6>
-                <bp_offset_g_pixel description="offset used in bad pixel detection for green pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_g_pixel>
-                <bp_offset_rb_pixel description="offset used in bad pixel detection for red or blue pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_rb_pixel>
-                <t2_bp_offset_g_pixel description="offset used in bad green pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_g_pixel>
-                <t2_bp_offset_rb_pixel description="offset used in bad red or blue pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_rb_pixel>
+                <fmax_pixel_q6 type="float" range="[0, 255]" length="1">80</fmax_pixel_q6>
+                <fmin_pixel_q6 type="float" range="[0, 255]" length="1">32</fmin_pixel_q6>
+                <bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_g_pixel>
+                <bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_rb_pixel>
+                <t2_bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_g_pixel>
+                <t2_bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_rb_pixel>
               </pdpc11_rgn_data>
             </mod_pdpc11_aec_data>
             <mod_pdpc11_aec_data>
@@ -158,12 +158,12 @@
                 <gain_end>128</gain_end>
               </aec_trigger>
               <pdpc11_rgn_data>
-                <fmax_pixel_q6 description="Bad pixel maximum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">80</fmax_pixel_q6>
-                <fmin_pixel_q6 description="Bad pixel minimum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">32</fmin_pixel_q6>
-                <bp_offset_g_pixel description="offset used in bad pixel detection for green pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_g_pixel>
-                <bp_offset_rb_pixel description="offset used in bad pixel detection for red or blue pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_rb_pixel>
-                <t2_bp_offset_g_pixel description="offset used in bad green pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_g_pixel>
-                <t2_bp_offset_rb_pixel description="offset used in bad red or blue pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_rb_pixel>
+                <fmax_pixel_q6 type="float" range="[0, 255]" length="1">80</fmax_pixel_q6>
+                <fmin_pixel_q6 type="float" range="[0, 255]" length="1">32</fmin_pixel_q6>
+                <bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_g_pixel>
+                <bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_rb_pixel>
+                <t2_bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_g_pixel>
+                <t2_bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_rb_pixel>
               </pdpc11_rgn_data>
             </mod_pdpc11_aec_data>
             <mod_pdpc11_aec_data>
@@ -174,12 +174,12 @@
                 <gain_end>256</gain_end>
               </aec_trigger>
               <pdpc11_rgn_data>
-                <fmax_pixel_q6 description="Bad pixel maximum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">80</fmax_pixel_q6>
-                <fmin_pixel_q6 description="Bad pixel minimum threshold factor." range="[0, 255]" bit_depth="8uQ6" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">32</fmin_pixel_q6>
-                <bp_offset_g_pixel description="offset used in bad pixel detection for green pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_g_pixel>
-                <bp_offset_rb_pixel description="offset used in bad pixel detection for red or blue pixels in regular bayer or T1 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</bp_offset_rb_pixel>
-                <t2_bp_offset_g_pixel description="offset used in bad green pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_g_pixel>
-                <t2_bp_offset_rb_pixel description="offset used in bad red or blue pixel detection for T2 in HDR mode." range="[0, 32767]" bit_depth="15u" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="larger values mean less bad pixels detection">128</t2_bp_offset_rb_pixel>
+                <fmax_pixel_q6 type="float" range="[0, 255]" length="1">80</fmax_pixel_q6>
+                <fmin_pixel_q6 type="float" range="[0, 255]" length="1">32</fmin_pixel_q6>
+                <bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_g_pixel>
+                <bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</bp_offset_rb_pixel>
+                <t2_bp_offset_g_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_g_pixel>
+                <t2_bp_offset_rb_pixel type="uint" range="[0, 32767]" length="1">128</t2_bp_offset_rb_pixel>
               </pdpc11_rgn_data>
             </mod_pdpc11_aec_data>
           </hdr_aec_data>

@@ -8,7 +8,7 @@
 -->
 <demux13_ife
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\..\..\..\cdk\chromatix\XSD\isp\demux_1_3_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\demux_1_3_0.xsd">
   <enable_section>
     <demux_enable>1</demux_enable>
   </enable_section>

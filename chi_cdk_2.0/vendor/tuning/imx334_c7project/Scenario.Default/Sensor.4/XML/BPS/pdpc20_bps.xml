@@ -8,7 +8,7 @@
 -->
 <pdpc20_bps
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\XSD\isp\pdpc_2_0_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\pdpc_2_0_0.xsd">
   <enable_section>
     <pdpc_enable>0</pdpc_enable>
     <dsbpc_enable>0</dsbpc_enable>

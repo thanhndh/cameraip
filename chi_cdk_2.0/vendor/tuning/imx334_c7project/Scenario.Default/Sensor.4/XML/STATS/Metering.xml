@@ -8,7 +8,7 @@
 -->
 <Metering
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\..\..\..\cdk\chromatix\XSD\stats\aec\aecMetering.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\stats\aec\aecMetering.xsd">
   <module_version>
     <major_revision>1</major_revision>
     <minor_revision>0</minor_revision>

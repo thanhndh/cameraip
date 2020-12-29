@@ -8,7 +8,7 @@
 -->
 <anr10_ipe
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\..\..\XSD\isp\anr_1_0_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\anr_1_0_0.xsd">
   <enable_section>
     <enable_luma_noise_reduction>1</enable_luma_noise_reduction>
     <enable_chroma_noise_reduction>1</enable_chroma_noise_reduction>

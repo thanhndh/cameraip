@@ -8,7 +8,7 @@
 -->
 <demosaic36_bps
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\XSD\isp\demosaic_3_6_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\demosaic_3_6_0.xsd">
   <enable_section>
     <demosaic_enable>1</demosaic_enable>
   </enable_section>

@@ -8,7 +8,7 @@
 -->
 <ds4to1v10_ife_dc4_dc16
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\..\..\..\cdk\chromatix\XSD\isp\ds4to1_1_0_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\ds4to1_1_0_0.xsd">
   <enable_section/>
   <module_version major_revision="1" minor_revision="0" incr_revision="0"/>
   <control_variables>

@@ -8,7 +8,7 @@
 -->
 <ltm13_ipe
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\..\..\XSD\isp\ltm_1_3_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\ltm_1_3_0.xsd">
   <enable_section>
     <ltm_enable>1</ltm_enable>
   </enable_section>

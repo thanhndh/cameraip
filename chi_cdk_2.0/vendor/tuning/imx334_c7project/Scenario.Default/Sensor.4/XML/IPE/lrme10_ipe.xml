@@ -8,7 +8,7 @@
 -->
 <lrme10_ipe
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\..\..\XSD\isp\lrme_1_0_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\lrme_1_0_0.xsd">
   <enable_section>
     <en>1</en>
   </enable_section>

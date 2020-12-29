@@ -8,7 +8,7 @@
 -->
 <linearization33_ife
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\..\..\..\cdk\chromatix\XSD\isp\linearization_3_3_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\linearization_3_3_0.xsd">
   <enable_section>
     <linearization_enable>1</linearization_enable>
   </enable_section>

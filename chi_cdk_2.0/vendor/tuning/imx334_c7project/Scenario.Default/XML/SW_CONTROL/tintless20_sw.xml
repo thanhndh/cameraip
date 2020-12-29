@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
 ========================================================================
-   Copyright(c) 2018 Qualcomm Technologies, Inc.
+   Copyright (c) 2017-2020 Qualcomm Technologies, Inc.
    All Rights Reserved.
    Confidential and Proprietary - Qualcomm Technologies, Inc.
 ========================================================================
@@ -23,14 +23,14 @@
   </control_method>
   <dynamic_enable_triggers>
     <tintless_en>
-      <enable description="enable Tintless 2.0 module" range="[0, 1]" bit_depth="1u" length="1" tuning_parameter_level="rarely_tune" additional_notes="none">1</enable>
-      <hyst_control_var description="enable Tintless 2.0 module" range="[0, 1]" bit_depth="1u" length="1" tuning_parameter_level="rarely_tune" additional_notes="none">control_gain</hyst_control_var>
+      <enable type="int" range="[0, 1]" length="1">0</enable>
+      <hyst_control_var type="uint" range="[0, 1]" length="1">control_gain</hyst_control_var>
       <hyst_mode>UPWARD</hyst_mode>
       <hyst_trigger>
-        <start1>800</start1>
-        <end1>900</end1>
-        <start2>500</start2>
-        <end2>600</end2>
+        <start1>0.9</start1>
+        <end1>0.91</end1>
+        <start2>0.9</start2>
+        <end2>0.91</end2>
       </hyst_trigger>
     </tintless_en>
   </dynamic_enable_triggers>
@@ -46,55 +46,19 @@
         <mod_tintless20_aec_data>
           <aec_trigger>
             <lux_idx_start>1</lux_idx_start>
-            <lux_idx_end>200</lux_idx_end>
-            <gain_start>1</gain_start>
-            <gain_end>200</gain_end>
-          </aec_trigger>
-          <tintless20_rgn_data>
-            <tintless_threshold_tab description="Determine how much color shading will be treated as tint based on intensity." range="[0, 10]" bit_depth="4u" length="16" tuning_parameter_level="must_tune" additional_notes="Higher threshold will correct more color shading, but will also over correct actual color in scene.">
-              <tintless_threshold>4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4</tintless_threshold>
-            </tintless_threshold_tab>
-            <tintless_high_accuracy_mode description="Enable this to alleviate tint in shadow regions. A noisy sensor could use a higher value." range="[0,255]" bit_depth="8u" length="1" tuning_parameter_level="often_tune" additional_notes="Can be used to run tintless on a noisy sensor.">8</tintless_high_accuracy_mode>
-            <tintless_update_delay description="Controls how frequently the color lens shade correction is updated." range="[1,30]" bit_depth="5u" length="1" tuning_parameter_level="rarely_tune" additional_notes="A lower value means more frequent updates. The default value has the effect of updating the correction table every 3rd preview frame">3</tintless_update_delay>
-            <tintless_trace_percentage description="Tracing percentage of tintless to apply rolloff table." range="[0.0,1.0]" bit_depth="8u" length="1" tuning_parameter_level="rarely_tune" additional_notes="A lower value means less tracing. Rolloff may not be updated 100% as new tintless output and tracing slowly. A higher value mean more aggressive tracing so it matches with new tintless output. It may cause flickering.">0.4</tintless_trace_percentage>
-            <center_weight description="center compensation weight" range="[0.0, 1.0]" bit_depth="16u" length="1" tuning_parameter_level="rarely_tune" additional_notes="give center compensation weight and if it is 0, it means don't give weight on center">1</center_weight>
-            <corner_weight description="corner compensation weight" range="[0.0, 1.0]" bit_depth="16u" length="1" tuning_parameter_level="rarely_tune" additional_notes="give corner compensation weight and if it is 0, it means don't give weight on corner">1</corner_weight>
-          </tintless20_rgn_data>
-        </mod_tintless20_aec_data>
-        <mod_tintless20_aec_data>
-          <aec_trigger>
-            <lux_idx_start>230</lux_idx_start>
-            <lux_idx_end>450</lux_idx_end>
-            <gain_start>1</gain_start>
-            <gain_end>200</gain_end>
-          </aec_trigger>
-          <tintless20_rgn_data>
-            <tintless_threshold_tab description="Determine how much color shading will be treated as tint based on intensity." range="[0, 10]" bit_depth="4u" length="16" tuning_parameter_level="must_tune" additional_notes="Higher threshold will correct more color shading, but will also over correct actual color in scene.">
-              <tintless_threshold>4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4</tintless_threshold>
-            </tintless_threshold_tab>
-            <tintless_high_accuracy_mode description="Enable this to alleviate tint in shadow regions. A noisy sensor could use a higher value." range="[0,255]" bit_depth="8u" length="1" tuning_parameter_level="often_tune" additional_notes="Can be used to run tintless on a noisy sensor.">8</tintless_high_accuracy_mode>
-            <tintless_update_delay description="Controls how frequently the color lens shade correction is updated." range="[1,30]" bit_depth="5u" length="1" tuning_parameter_level="rarely_tune" additional_notes="A lower value means more frequent updates. The default value has the effect of updating the correction table every 3rd preview frame">3</tintless_update_delay>
-            <tintless_trace_percentage description="Tracing percentage of tintless to apply rolloff table." range="[0.0,1.0]" bit_depth="8u" length="1" tuning_parameter_level="rarely_tune" additional_notes="A lower value means less tracing. Rolloff may not be updated 100% as new tintless output and tracing slowly. A higher value mean more aggressive tracing so it matches with new tintless output. It may cause flickering.">0.4</tintless_trace_percentage>
-            <center_weight description="center compensation weight" range="[0.0, 1.0]" bit_depth="16u" length="1" tuning_parameter_level="rarely_tune" additional_notes="give center compensation weight and if it is 0, it means don't give weight on center">1</center_weight>
-            <corner_weight description="corner compensation weight" range="[0.0, 1.0]" bit_depth="16u" length="1" tuning_parameter_level="rarely_tune" additional_notes="give corner compensation weight and if it is 0, it means don't give weight on corner">1</corner_weight>
-          </tintless20_rgn_data>
-        </mod_tintless20_aec_data>
-        <mod_tintless20_aec_data>
-          <aec_trigger>
-            <lux_idx_start>480</lux_idx_start>
             <lux_idx_end>900</lux_idx_end>
             <gain_start>1</gain_start>
             <gain_end>200</gain_end>
           </aec_trigger>
           <tintless20_rgn_data>
-            <tintless_threshold_tab description="Determine how much color shading will be treated as tint based on intensity." range="[0, 10]" bit_depth="4u" length="16" tuning_parameter_level="must_tune" additional_notes="Higher threshold will correct more color shading, but will also over correct actual color in scene.">
+            <tintless_threshold_tab type="uint" range="[0, 10]" length="16">
               <tintless_threshold>4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4</tintless_threshold>
             </tintless_threshold_tab>
-            <tintless_high_accuracy_mode description="Enable this to alleviate tint in shadow regions. A noisy sensor could use a higher value." range="[0,255]" bit_depth="8u" length="1" tuning_parameter_level="often_tune" additional_notes="Can be used to run tintless on a noisy sensor.">8</tintless_high_accuracy_mode>
-            <tintless_update_delay description="Controls how frequently the color lens shade correction is updated." range="[1,30]" bit_depth="5u" length="1" tuning_parameter_level="rarely_tune" additional_notes="A lower value means more frequent updates. The default value has the effect of updating the correction table every 3rd preview frame">3</tintless_update_delay>
-            <tintless_trace_percentage description="Tracing percentage of tintless to apply rolloff table." range="[0.0,1.0]" bit_depth="8u" length="1" tuning_parameter_level="rarely_tune" additional_notes="A lower value means less tracing. Rolloff may not be updated 100% as new tintless output and tracing slowly. A higher value mean more aggressive tracing so it matches with new tintless output. It may cause flickering.">0.4</tintless_trace_percentage>
-            <center_weight description="center compensation weight" range="[0.0, 1.0]" bit_depth="16u" length="1" tuning_parameter_level="rarely_tune" additional_notes="give center compensation weight and if it is 0, it means don't give weight on center">1</center_weight>
-            <corner_weight description="corner compensation weight" range="[0.0, 1.0]" bit_depth="16u" length="1" tuning_parameter_level="rarely_tune" additional_notes="give corner compensation weight and if it is 0, it means don't give weight on corner">1</corner_weight>
+            <tintless_high_accuracy_mode type="uint" range="[0,255]" length="1">8</tintless_high_accuracy_mode>
+            <tintless_update_delay type="uint" range="[1,30]" length="1">3</tintless_update_delay>
+            <tintless_trace_percentage type="float" range="[0.0,1.0]" length="1">0.4</tintless_trace_percentage>
+            <center_weight type="float" range="[0.0, 1.0]" length="1">1</center_weight>
+            <corner_weight type="float" range="[0.0, 1.0]" length="1">1</corner_weight>
           </tintless20_rgn_data>
         </mod_tintless20_aec_data>
       </hdr_aec_data>

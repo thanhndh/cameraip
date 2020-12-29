@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
 ========================================================================
-   Copyright(c) 2019 Qualcomm Technologies, Inc.
+   Copyright (c) 2019-2020 Qualcomm Technologies, Inc.
    All Rights Reserved.
    Confidential and Proprietary - Qualcomm Technologies, Inc.
 ========================================================================
 -->
 <gamma16_bps
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\XSD\isp\gamma_1_6_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\gamma_1_6_0.xsd">
   <enable_section>
     <gamma_enable>1</gamma_enable>
   </enable_section>
@@ -65,21 +65,21 @@
                         <mod_gamma16_channel_data>
                           <!--Channel type selection for R/G/B/All -->
                           <channel_type>channel_R</channel_type>
-                          <gamma16_rgn_data description="Gamma table per channel" range="[0,1023]" bit_depth="(16+2*b) bit, signed. (8+b) LSBs base (unsigned), (8+b) MSBs delta (signed)." length="65" conversion="no conversion needed" tuning_parameter_level="must_tune" additional_notes="none">
+                          <gamma16_rgn_data type="int" range="[0,1023]" length="65">
                             <table>0 64 108 144 176 205 232 258 282 304 326 347 367 386 405 423 441 458 475 491 507 523 538 553 568 583 597 611 625 638 651 665 678 690 703 715 728 740 752 764 775 787 798 810 821 832 843 854 865 875 886 896 907 917 927 937 947 957 967 977 987 996 1006 1015 1024</table>
                           </gamma16_rgn_data>
                         </mod_gamma16_channel_data>
                         <mod_gamma16_channel_data>
                           <!--Channel type selection for R/G/B/All -->
                           <channel_type>channel_G</channel_type>
-                          <gamma16_rgn_data description="Gamma table per channel" range="[0,1023]" bit_depth="(16+2*b) bit, signed. (8+b) LSBs base (unsigned), (8+b) MSBs delta (signed)." length="65" conversion="no conversion needed" tuning_parameter_level="must_tune" additional_notes="none">
+                          <gamma16_rgn_data type="int" range="[0,1023]" length="65">
                             <table>0 64 108 144 176 205 232 258 282 304 326 347 367 386 405 423 441 458 475 491 507 523 538 553 568 583 597 611 625 638 651 665 678 690 703 715 728 740 752 764 775 787 798 810 821 832 843 854 865 875 886 896 907 917 927 937 947 957 967 977 987 996 1006 1015 1024</table>
                           </gamma16_rgn_data>
                         </mod_gamma16_channel_data>
                         <mod_gamma16_channel_data>
                           <!--Channel type selection for R/G/B/All -->
                           <channel_type>channel_B</channel_type>
-                          <gamma16_rgn_data description="Gamma table per channel" range="[0,1023]" bit_depth="(16+2*b) bit, signed. (8+b) LSBs base (unsigned), (8+b) MSBs delta (signed)." length="65" conversion="no conversion needed" tuning_parameter_level="must_tune" additional_notes="none">
+                          <gamma16_rgn_data type="int" range="[0,1023]" length="65">
                             <table>0 64 108 144 176 205 232 258 282 304 326 347 367 386 405 423 441 458 475 491 507 523 538 553 568 583 597 611 625 638 651 665 678 690 703 715 728 740 752 764 775 787 798 810 821 832 843 854 865 875 886 896 907 917 927 937 947 957 967 977 987 996 1006 1015 1024</table>
                           </gamma16_rgn_data>
                         </mod_gamma16_channel_data>
@@ -104,21 +104,21 @@
                         <mod_gamma16_channel_data>
                           <!--Channel type selection for R/G/B/All -->
                           <channel_type>channel_R</channel_type>
-                          <gamma16_rgn_data description="Gamma table per channel" range="[0,1023]" bit_depth="(16+2*b) bit, signed. (8+b) LSBs base (unsigned), (8+b) MSBs delta (signed)." length="65" conversion="no conversion needed" tuning_parameter_level="must_tune" additional_notes="none">
+                          <gamma16_rgn_data type="int" range="[0,1023]" length="65">
                             <table>0 64 108 144 176 205 232 258 282 304 326 347 367 386 405 423 441 458 475 491 507 523 538 553 568 583 597 611 625 638 651 665 678 690 703 715 728 740 752 764 775 787 798 810 821 832 843 854 865 875 886 896 907 917 927 937 947 957 967 977 987 996 1006 1015 1024</table>
                           </gamma16_rgn_data>
                         </mod_gamma16_channel_data>
                         <mod_gamma16_channel_data>
                           <!--Channel type selection for R/G/B/All -->
                           <channel_type>channel_G</channel_type>
-                          <gamma16_rgn_data description="Gamma table per channel" range="[0,1023]" bit_depth="(16+2*b) bit, signed. (8+b) LSBs base (unsigned), (8+b) MSBs delta (signed)." length="65" conversion="no conversion needed" tuning_parameter_level="must_tune" additional_notes="none">
+                          <gamma16_rgn_data type="int" range="[0,1023]" length="65">
                             <table>0 64 108 144 176 205 232 258 282 304 326 347 367 386 405 423 441 458 475 491 507 523 538 553 568 583 597 611 625 638 651 665 678 690 703 715 728 740 752 764 775 787 798 810 821 832 843 854 865 875 886 896 907 917 927 937 947 957 967 977 987 996 1006 1015 1024</table>
                           </gamma16_rgn_data>
                         </mod_gamma16_channel_data>
                         <mod_gamma16_channel_data>
                           <!--Channel type selection for R/G/B/All -->
                           <channel_type>channel_B</channel_type>
-                          <gamma16_rgn_data description="Gamma table per channel" range="[0,1023]" bit_depth="(16+2*b) bit, signed. (8+b) LSBs base (unsigned), (8+b) MSBs delta (signed)." length="65" conversion="no conversion needed" tuning_parameter_level="must_tune" additional_notes="none">
+                          <gamma16_rgn_data type="int" range="[0,1023]" length="65">
                             <table>0 64 108 144 176 205 232 258 282 304 326 347 367 386 405 423 441 458 475 491 507 523 538 553 568 583 597 611 625 638 651 665 678 690 703 715 728 740 752 764 775 787 798 810 821 832 843 854 865 875 886 896 907 917 927 937 947 957 967 977 987 996 1006 1015 1024</table>
                           </gamma16_rgn_data>
                         </mod_gamma16_channel_data>
@@ -143,21 +143,21 @@
                         <mod_gamma16_channel_data>
                           <!--Channel type selection for R/G/B/All -->
                           <channel_type>channel_R</channel_type>
-                          <gamma16_rgn_data description="Gamma table per channel" range="[0,1023]" bit_depth="(16+2*b) bit, signed. (8+b) LSBs base (unsigned), (8+b) MSBs delta (signed)." length="65" conversion="no conversion needed" tuning_parameter_level="must_tune" additional_notes="none">
+                          <gamma16_rgn_data type="int" range="[0,1023]" length="65">
                             <table>0 64 108 144 176 205 232 258 282 304 326 347 367 386 405 423 441 458 475 491 507 523 538 553 568 583 597 611 625 638 651 665 678 690 703 715 728 740 752 764 775 787 798 810 821 832 843 854 865 875 886 896 907 917 927 937 947 957 967 977 987 996 1006 1015 1024</table>
                           </gamma16_rgn_data>
                         </mod_gamma16_channel_data>
                         <mod_gamma16_channel_data>
                           <!--Channel type selection for R/G/B/All -->
                           <channel_type>channel_G</channel_type>
-                          <gamma16_rgn_data description="Gamma table per channel" range="[0,1023]" bit_depth="(16+2*b) bit, signed. (8+b) LSBs base (unsigned), (8+b) MSBs delta (signed)." length="65" conversion="no conversion needed" tuning_parameter_level="must_tune" additional_notes="none">
+                          <gamma16_rgn_data type="int" range="[0,1023]" length="65">
                             <table>0 64 108 144 176 205 232 258 282 304 326 347 367 386 405 423 441 458 475 491 507 523 538 553 568 583 597 611 625 638 651 665 678 690 703 715 728 740 752 764 775 787 798 810 821 832 843 854 865 875 886 896 907 917 927 937 947 957 967 977 987 996 1006 1015 1024</table>
                           </gamma16_rgn_data>
                         </mod_gamma16_channel_data>
                         <mod_gamma16_channel_data>
                           <!--Channel type selection for R/G/B/All -->
                           <channel_type>channel_B</channel_type>
-                          <gamma16_rgn_data description="Gamma table per channel" range="[0,1023]" bit_depth="(16+2*b) bit, signed. (8+b) LSBs base (unsigned), (8+b) MSBs delta (signed)." length="65" conversion="no conversion needed" tuning_parameter_level="must_tune" additional_notes="none">
+                          <gamma16_rgn_data type="int" range="[0,1023]" length="65">
                             <table>0 64 108 144 176 205 232 258 282 304 326 347 367 386 405 423 441 458 475 491 507 523 538 553 568 583 597 611 625 638 651 665 678 690 703 715 728 740 752 764 775 787 798 810 821 832 843 854 865 875 886 896 907 917 927 937 947 957 967 977 987 996 1006 1015 1024</table>
                           </gamma16_rgn_data>
                         </mod_gamma16_channel_data>

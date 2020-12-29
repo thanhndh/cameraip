@@ -8,7 +8,7 @@
 -->
 <bls12_bps
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\XSD\isp\bls_1_2_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\bls_1_2_0.xsd">
   <enable_section>
     <bls_enable>0</bls_enable>
   </enable_section>

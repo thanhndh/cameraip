@@ -8,7 +8,7 @@
 -->
 <cst12_ife
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="..\..\..\..\..\..\cdk\chromatix\XSD\isp\cst_1_2_0.xsd">
+  xsi:noNamespaceSchemaLocation="..\..\..\..\XSD\isp\cst_1_2_0.xsd">
   <enable_section>
     <cst_enable>1</cst_enable>
   </enable_section>

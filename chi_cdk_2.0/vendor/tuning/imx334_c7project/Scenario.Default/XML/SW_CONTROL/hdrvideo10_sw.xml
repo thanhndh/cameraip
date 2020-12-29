@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
 ========================================================================
-   Copyright(c) 2018 Qualcomm Technologies, Inc.
+   Copyright (c) 2017-2020 Qualcomm Technologies, Inc.
    All Rights Reserved.
    Confidential and Proprietary - Qualcomm Technologies, Inc.
 ========================================================================
@@ -14,7 +14,7 @@
   </enable_section>
   <module_version major_revision="1" minor_revision="0" incr_revision="0"/>
   <chromatix_hdrvideo10_reserve>
-    <maxcll description="Maximum Content Light Level" range="[0,10000]" bit_depth="N/A" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="N/A">1000</maxcll>
-    <maxfall description="Maximum Frame-Average Light Level" range="[0,10000]" bit_depth="N/A" length="1" conversion="No Conversion needed" tuning_parameter_level="often_tune" additional_notes="N/A">200</maxfall>
+    <maxcll type="uint" range="[0,10000]" length="1">1000</maxcll>
+    <maxfall type="uint" range="[0,10000]" length="1">200</maxfall>
   </chromatix_hdrvideo10_reserve>
 </hdrvideo10_sw>

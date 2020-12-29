@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
 ========================================================================
-   Copyright(c) 2018 Qualcomm Technologies, Inc.
+   Copyright (c) 2017 Qualcomm Technologies, Inc.
    All Rights Reserved.
    Confidential and Proprietary - Qualcomm Technologies, Inc.
 ========================================================================
@@ -9,9 +9,9 @@
 <histCtrlV1
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="..\..\..\XSD\stats\awb\modhistctrlv1.xsd">
-  <moduleID description="Define module ID, sub module ID" tuning_parameter_level="never_tune">
-    <moduleID range="[1,1000]">0</moduleID>
-    <subModuleID range="[1,1000]">0</subModuleID>
+  <moduleID>
+    <moduleID type="int" range="[1,1000]">0</moduleID>
+    <subModuleID type="int" range="[1,1000]">0</subModuleID>
   </moduleID>
   <module_version>
     <major_revision>1</major_revision>
@@ -19,5 +19,5 @@
     <incr_revision>0</incr_revision>
   </module_version>
   <enableFlag>0</enableFlag>
-  <historySize description="History buffer size" tuning_parameter_level="rarely_tune">30</historySize>
+  <historySize>30</historySize>
 </histCtrlV1>
