@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+========================================================================
+   Copyright (c) 2019-2020 Qualcomm Technologies, Inc.
+   All Rights Reserved.
+   Confidential and Proprietary - Qualcomm Technologies, Inc.
+========================================================================
+-->
+<aecShdr
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="..\..\..\XSD\stats\aec\aecShdr.xsd">
+  <module_version>
+    <major_revision>2</major_revision>
+    <minor_revision>0</minor_revision>
+    <incr_revision>0</incr_revision>
+  </module_version>
+  <shdrMtr>
+    <enableShdr type="uint" range="[0, 1]" length="1">0</enableShdr>
+    <numExposure type="uint" range="[2, 3]" length="1">2</numExposure>
+    <sHDRConvType range="[0,3]">AECAlgoSHDRConvNormal</sHDRConvType>
+    <expTables>
+      <sensitivityCorrectionFactor type="float" range="[0,16]">2</sensitivityCorrectionFactor>
+      <expKneeEntries>
+        <gain type="float" range="[1,512]">1</gain>
+        <expTime type="ulong" range="[1,60000000000]">10787</expTime>
+        <incrementPriority range="[0,2]">AECExpIncExpTime</incrementPriority>
+        <expIndex type="float" range="[-100,1000]">0</expIndex>
+      </expKneeEntries>
+      <expKneeEntries>
+        <gain type="float" range="[1,512]">2</gain>
+        <expTime type="ulong" range="[1,60000000000]">10000000</expTime>
+        <incrementPriority range="[0,2]">AECExpIncExpTime</incrementPriority>
+        <expIndex type="float" range="[-100,1000]">254.582245</expIndex>
+      </expKneeEntries>
+      <expKneeEntries>
+        <gain type="float" range="[1,512]">135</gain>
+        <expTime type="ulong" range="[1,60000000000]">33333330</expTime>
+        <incrementPriority range="[0,2]">AECExpIncGain</incrementPriority>
+        <expIndex type="float" range="[-100,1000]">437.813629</expIndex>
+      </expKneeEntries>
+      <thresAntiBandingMinExpTimePct type="float" range="[0.5,1.5]">0.5</thresAntiBandingMinExpTimePct>
+    </expTables>
+    <SEFHistRangeStart type="float" range="[0.0, 1.0]" length="1">0</SEFHistRangeStart>
+    <SEFHistRangeEnd type="float" range="[0.0, 1.0]" length="1">0.001</SEFHistRangeEnd>
+    <SEFHistRefTarget type="float" range="[0.0, 255.0]" length="1">200</SEFHistRefTarget>
+    <SEFConvSpeed type="float" range="[0.0, 1.0]" length="1">0.85</SEFConvSpeed>
+    <SEFMinIdxForSun type="float" range="[0.0, 255.0]" length="1">45</SEFMinIdxForSun>
+    <SEFSettleTolerance type="float" range="[0.0, 10.0]" length="1">2</SEFSettleTolerance>
+    <SEFSettleCntThres type="uint" range="[1, 15]" length="1">5</SEFSettleCntThres>
+    <FlatSceneHandling type="uint" range="[0, 1]" length="1">1</FlatSceneHandling>
+    <FlatAdjustStep type="float" range="[0.0, 1.0]" length="1">0.9</FlatAdjustStep>
+    <FlatAdjustMaxItr type="uint" range="[1, 31]" length="1">15</FlatAdjustMaxItr>
+    <FinalTMTarget type="float" range="[0.0, 1023.0]" length="1">570</FinalTMTarget>
+    <ExpRatioCapHigh type="float" range="[0.0, 1023.0]" length="1">64</ExpRatioCapHigh>
+    <ExpRatioCapLow type="float" range="[0.0, 1023.0]" length="1">1.01</ExpRatioCapLow>
+    <LEFConvSpeed type="float" range="[0.0, 1.0]" length="1">0.7</LEFConvSpeed>
+    <LEFIterStep type="float" range="[1.0, 1.3]" length="1">1.1</LEFIterStep>
+    <LEFIterLumaTolerance type="float" range="[0.0, 1.0]" length="1">0.02</LEFIterLumaTolerance>
+    <LEFIterMaxCnt type="uint" range="[1, 31]" length="1">15</LEFIterMaxCnt>
+    <LEFMaxGain type="float" range="[0.0, 1023.0]" length="1">8</LEFMaxGain>
+    <reserved type="float" range="[0.0,1023.0]">0</reserved>
+    <reserved type="float" range="[0.0,1023.0]">0</reserved>
+    <reserved type="float" range="[0.0,1023.0]">0</reserved>
+    <reserved type="float" range="[0.0,1023.0]">0</reserved>
+    <reserved type="float" range="[0.0,1023.0]">0</reserved>
+    <reserved type="float" range="[0.0,1023.0]">0</reserved>
+    <reserved type="float" range="[0.0,1023.0]">0</reserved>
+    <reserved type="float" range="[0.0,1023.0]">0</reserved>
+    <reserved type="float" range="[0.0,1023.0]">0</reserved>
+    <reserved type="float" range="[0.0,1023.0]">0</reserved>
+  </shdrMtr>
+</aecShdr>

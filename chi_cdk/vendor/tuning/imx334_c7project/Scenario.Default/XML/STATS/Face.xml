@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+========================================================================
+   Copyright (c) 2017-2019 Qualcomm Technologies, Inc.
+   All Rights Reserved.
+   Confidential and Proprietary - Qualcomm Technologies, Inc.
+========================================================================
+-->
+<Face
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="..\..\..\XSD\stats\aec\aecFace.xsd">
+  <module_version>
+    <major_revision>1</major_revision>
+    <minor_revision>0</minor_revision>
+    <incr_revision>0</incr_revision>
+  </module_version>
+  <faceMtr>
+    <enableFaceROI type="bool">true</enableFaceROI>
+    <weightTemporalFilter type="float" range="[0,1]">0</weightTemporalFilter>
+    <centerWeightStrength type="float" range="[0,1]">1</centerWeightStrength>
+    <statsUpdateDelayTimeEnter type="float" range="[0,10]">0.3</statsUpdateDelayTimeEnter>
+    <statsUpdateDelayTimeExit type="float" range="[0,10]">0</statsUpdateDelayTimeExit>
+    <enableBackLitComp type="bool">true</enableBackLitComp>
+    <!--
+
+Base Type Tuning Definition
+
+ -->
+    <backlitWeighttAdjSettings>
+      <start>1</start>
+      <end>1</end>
+    </backlitWeighttAdjSettings>
+    <!--
+
+Base Type Tuning Definition
+
+ -->
+    <thresBackLitLumaRatio>
+      <start>1</start>
+      <end>1</end>
+    </thresBackLitLumaRatio>
+    <enableHistLumaTargetSuppression type="bool">true</enableHistLumaTargetSuppression>
+    <!--
+
+Base Type Tuning Definition
+
+ -->
+    <faceWeight>
+      <start>0.2</start>
+      <end>0.9</end>
+    </faceWeight>
+    <faceLumaWeightLuxIndexTrigger>
+      <enableFaceLumaTrigger type="bool">true</enableFaceLumaTrigger>
+      <LuxFaceLumaWeight>
+        <LuxFaceWeightZone>
+          <zoneTrigger>
+            <start>0</start>
+            <end>190</end>
+          </zoneTrigger>
+          <zoneData>
+            <!--
+
+Base Type Tuning Definition
+
+ -->
+            <LuxFaceWeight>
+              <start>0.2</start>
+              <end>0.9</end>
+            </LuxFaceWeight>
+          </zoneData>
+        </LuxFaceWeightZone>
+        <LuxFaceWeightZone>
+          <zoneTrigger>
+            <start>230</start>
+            <end>360</end>
+          </zoneTrigger>
+          <zoneData>
+            <!--
+
+Base Type Tuning Definition
+
+ -->
+            <LuxFaceWeight>
+              <start>0.2</start>
+              <end>0.9</end>
+            </LuxFaceWeight>
+          </zoneData>
+        </LuxFaceWeightZone>
+        <LuxFaceWeightZone>
+          <zoneTrigger>
+            <start>420</start>
+            <end>1000</end>
+          </zoneTrigger>
+          <zoneData>
+            <!--
+
+Base Type Tuning Definition
+
+ -->
+            <LuxFaceWeight>
+              <start>0.2</start>
+              <end>0.9</end>
+            </LuxFaceWeight>
+          </zoneData>
+        </LuxFaceWeightZone>
+      </LuxFaceLumaWeight>
+    </faceLumaWeightLuxIndexTrigger>
+    <!--
+
+Base Type Tuning Definition
+
+ -->
+    <faceSize>
+      <start>0.2</start>
+      <end>0.5</end>
+    </faceSize>
+    <faceSizeWeightLuxIndexTrigger>
+      <enableFaceSizeTrigger type="bool">false</enableFaceSizeTrigger>
+      <LuxFaceSizeWeight>
+        <LuxFaceWeightZone>
+          <zoneTrigger>
+            <start>0</start>
+            <end>190</end>
+          </zoneTrigger>
+          <zoneData>
+            <!--
+
+Base Type Tuning Definition
+
+ -->
+            <LuxFaceWeight>
+              <start>0.2</start>
+              <end>0.9</end>
+            </LuxFaceWeight>
+          </zoneData>
+        </LuxFaceWeightZone>
+        <LuxFaceWeightZone>
+          <zoneTrigger>
+            <start>230</start>
+            <end>360</end>
+          </zoneTrigger>
+          <zoneData>
+            <!--
+
+Base Type Tuning Definition
+
+ -->
+            <LuxFaceWeight>
+              <start>0.2</start>
+              <end>0.9</end>
+            </LuxFaceWeight>
+          </zoneData>
+        </LuxFaceWeightZone>
+        <LuxFaceWeightZone>
+          <zoneTrigger>
+            <start>420</start>
+            <end>1000</end>
+          </zoneTrigger>
+          <zoneData>
+            <!--
+
+Base Type Tuning Definition
+
+ -->
+            <LuxFaceWeight>
+              <start>0.2</start>
+              <end>0.9</end>
+            </LuxFaceWeight>
+          </zoneData>
+        </LuxFaceWeightZone>
+      </LuxFaceSizeWeight>
+    </faceSizeWeightLuxIndexTrigger>
+  </faceMtr>
+  <faceConv>
+    <convSpeedAdjRatio type="float" range="[0,10]">0.5</convSpeedAdjRatio>
+    <speedAdjDelayTimeEnter type="float" range="[0,10]">0.4</speedAdjDelayTimeEnter>
+    <speedAdjDelayTimeExit type="float" range="[0,10]">0</speedAdjDelayTimeExit>
+  </faceConv>
+</Face>
